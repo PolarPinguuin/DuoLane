@@ -15,6 +15,7 @@ div.login{
     position: absolute;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 105px 50px black;
+    padding-top: 70px;
 }
 
 .avatar{
@@ -31,23 +32,7 @@ p.loginPage {
 }
 
 form.login{
-    position: absolute;
-    top: 20%;
-    left: 20%;
 }
-
-input[value="Login"].login{
-    position: absolute;
-    top: 200px;
-    left: -20px;
-}
-
-input[value="Register!"].login{
-    position: absolute;
-    top: 200px;
-    left: 100px;
-}
-
 input[type=text], input[type="password"] {
     width: 100%;
     padding: 10px 10px;
@@ -61,12 +46,10 @@ input[type=text]:focus, input[type="password"]:focus{
     border: 3px solid red;
 }
 
-button.login{
-    position: absolute;
-    top: 200px;
-    left: 100px;
+.login input + label{
+    margin-top: 10px;
+    display:inline-block;
 }
-
 .btn {
     border: 2px solid gray;
     color: gray;
@@ -88,9 +71,8 @@ button.login{
 }
 
 .login_actions{
-    position: absolute;
-    top: 50px;
-    left: -10px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 
