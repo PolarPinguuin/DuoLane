@@ -1,3 +1,108 @@
 body {
-    background: red;
+    margin: 0;
+    padding: 0;
+    background: no-repeat url("../pictures/MainScreenBackground.jpg");
+    font-family: sans-serif;
 }
+
+div.login{
+    width: 320px;
+    height: 420px;
+    background: black;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 105px 50px black;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+p.loginPage {
+    color: white;
+}
+
+form.login{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+input[value="Login"].login{
+    position: absolute;
+    top: 200px;
+    left: -20px;
+}
+
+input[value="Register!"].login{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+input[type=text], input[type="password"] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+}
+
+input[type=text]:focus, input[type="password"]:focus{
+    border: 3px solid red;
+}
+
+button.login{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn:focus{
+    border: 3px solid red;
+    color: red;
+}
+
+.login_string_format{
+    font-family: Monospace, sans-serif;
+    font-weight: bold;
+}
+
+.login_actions{
+    position: absolute;
+    top: 50px;
+    left: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
