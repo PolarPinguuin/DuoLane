@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Duo Lane - Register</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css"
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
     <body>
         <div class="login">

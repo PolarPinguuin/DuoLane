@@ -1,14 +1,16 @@
 <?php
+    session_start();
+    require_once("config.php");
+
     $username = "";
     $email = "";
     $errors = array();
-
-    $db = mysqli_connect('localhost','root', 'banifacviata', 'duolane');
 
     if(mysqli_connect_errno()) {
         console('Connection failed');
         die('Connection to the database failed: ' . $db -> connect_error);
     }
+
 
     if(isset($_POST['register'])){
         $username = mysqli_real_escape_string($db, $_POST['username']);
@@ -60,7 +62,7 @@
 
             $_SESSION['username'] = $username;
             $_SESSION['success'] = "You are now logged in";
-           // header('location: index.html');
+            header('location: index.php');
         }
     }
 
@@ -77,17 +79,24 @@
             array_push($errors, "Password is required");
         }
 
+        console('Am ajuns aici');
+
         if(count($errors) == 0){
             $password = md5($password);
-            $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+            $query = "SELECT * FROM users WHERE username='{$username}' AND password='{$password}'";
             $results = mysqli_query($db, $query);
 
             console('There are no errors');
+            console(mysqli_num_rows($results));
 
             if(mysqli_num_rows($results) == 1) {
                 console('You are now loged in');
+
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = "You are now logged in";
+
+                header('location: post_login.php');
+
             }else {
                 array_push($errors, "Wrong username/password combination");
             }
