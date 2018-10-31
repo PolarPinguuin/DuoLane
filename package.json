@@ -1,0 +1,27 @@
+{
+  "name": "webproject",
+  "version": "1.0.0",
+  "description": "\"# DuoLane\"",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.7",
+    "php": "0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PolarPinguuin/DuoLane.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PolarPinguuin/DuoLane/issues"
+  },
+  "homepage": "https://github.com/PolarPinguuin/DuoLane#readme"
+}
