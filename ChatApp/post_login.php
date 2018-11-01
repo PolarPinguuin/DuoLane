@@ -40,6 +40,10 @@
                     }
                 });
             })
+
+            $('#sendMessageBtn').on('click', function(){
+                $('#message').val('');
+            })
         })
     </script>
 </head>

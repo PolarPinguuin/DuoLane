@@ -26,6 +26,9 @@
 
                 <div class="login_actions">
                     <button id="register" name="register" type="submit" class="btn"> Register </button>
+                    <p>
+                        Already have an account ? <a href="index.php" class="login_string_format"> Login </a>
+                    </p>
                 </div>
             </form>
         </div>
